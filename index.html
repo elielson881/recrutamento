@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recrutamento Clan Minecraft</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* Wallpaper novo de Minecraft futurista */
+      background: url('https://wallpapercave.com/w/wp15772663.jpg') no-repeat center center/cover;
+      background-attachment: fixed;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(20px);
+      border-radius: 25px;
+      padding: 40px;
+      width: 100%;
+      max-width: 450px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+      color: #fff;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 2rem;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px 18px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+      backdrop-filter: blur(5px);
+      transition: all 0.3s ease;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    input:focus, textarea:focus {
+      background: rgba(255,255,255,0.3);
+      box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .aviso {
+      font-size: 0.9rem;
+      color: #e0e0e0;
+      margin-bottom: 15px;
+      text-align: center;
+      font-style: italic;
+    }
+
+    button {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 15px;
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    }
+
+    button:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Recrutamento Clan Vortex</h2>
+    <form action="https://formspree.io/f/movnzqlk" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" placeholder="Sua idade" required>
+
+      <label for="kills">Quantas kills você tem?</label>
+      <input type="number" id="kills" name="kills" placeholder="Seu poder" required>
+
+      <label for="nick">Nick no Minecraft:</label>
+      <input type="text" id="nick" name="nick" placeholder="Seu nickname" required>
+
+      <label for="motivo">Por que quer entrar no clan?</label>
+      <textarea id="motivo" name="motivo" rows="4" placeholder="Conte-nos..." required></textarea>
+
+      <div class="aviso">Ao enviar, nosso RH deve retornar um e-mail em até 24 horas.</div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
